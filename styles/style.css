@@ -12,10 +12,7 @@ body {
 
 header nav {
   margin-bottom: 30px;
-}
-
-.title {
-  text-align: center;
+  align-items: center;
 }
 
 .img-nav {
@@ -23,8 +20,13 @@ header nav {
 }
 
 .hallownest-img {
-  width: 100%;
+  width: 90%;
   margin: 20px 0;
+}
+
+.title-container {
+  width: 100%;
+  text-align: center;
 }
 
 .main-article {
