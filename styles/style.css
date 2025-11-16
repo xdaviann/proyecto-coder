@@ -1,22 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-h1 {
-  color: navy;
+header nav {
+  margin-bottom: 30px;
 }
 
-h2 {
-  color: navy;
+.title {
+  text-align: center;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+.img-nav {
+  width: 10rem;
 }
 
-li {
-  list-style-type: none;
+.hallownest-img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.main-article {
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #ececec;
 }
