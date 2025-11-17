@@ -21,8 +21,13 @@ header nav {
   width: 10rem;
 }
 
-.hallownest-img {
+main {
   width: 90%;
+  margin: 0 auto;
+}
+
+.hallownest-img {
+  width: 100%;
   margin: 20px 0;
 }
 
@@ -31,55 +36,136 @@ header nav {
   text-align: center;
 }
 
-.main-article {
-  /* padding: 0 20px; */
-  width: 80%;
+.article {
   margin: 2rem auto;
 }
 
-.main-article p {
+.article p {
   margin: 2rem 0;
 }
 
-.main-article__subtitle {
+.article__subtitle {
   margin-top: 1rem;
+  text-align: center;
 }
 
-.main-article__container--buttons {
+.article__container--buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
   margin: 2rem 0;
 }
 
-.main-article__button {
+button {
   border: 2px rgb(16, 17, 19) solid;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   background: rgb(43, 48, 53);
 }
 
-.main-article__button:hover {
+button:hover {
   background: rgb(28, 31, 34);
 }
 
 .divider {
   width: 80%;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
-.news-section {
+.section {
   width: 80%;
   margin: 2rem auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title";
   justify-content: space-between;
+  gap: 2rem;
 }
 
-footer {
+@media (min-width: 768px) {
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title";
+  }
+
+  .article__container--buttons {
+    flex-direction: row;
+  }
+}
+
+.card img {
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 10px;
+  max-height: 20rem;
+  object-fit: contain;
+}
+
+.section__subtitle {
+  margin-bottom: 1rem;
+  grid-area: title;
   text-align: center;
 }
 
-p {
+/* 
+.section__card {
+  background: rgb(43, 48, 53);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section__card img {
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 250px;
+  min-height: 250px;
+  object-fit: cover;
+} */
+
+footer {
+  margin-top: 2rem;
+  font-size: small;
+  color: gray;
+  background-color: rgb(43, 48, 53);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.legal-links {
+  display: flex;
+  gap: 1rem;
+}
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-links a img {
+  width: 1.5rem;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
   margin: 0;
+}
+
+footer img {
+  width: 8rem;
 }
