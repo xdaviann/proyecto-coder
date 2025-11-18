@@ -169,3 +169,24 @@ footer p {
 footer img {
   width: 8rem;
 }
+
+.section .card {
+  background: rgb(43, 48, 53);
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.section .card .card-body {
+  padding: 1rem;
+}
+
+.section__subtitle {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
