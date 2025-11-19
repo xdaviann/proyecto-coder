@@ -48,45 +48,81 @@
         </nav>
     </header>
 
-    <h2>Abalorios y Mejoras del Aguijón</h2>
+    <main>
 
+        <h2>Amuletos y Mejoras del Aguijón</h2>
 
-    <h3>Amuletos</h3>
-    <img src="../assets/amuletos.jpg" alt="">
-    <p>
-        Corazón Frágil: Aumenta las máscaras de vida del Caballero. Es invaluable al inicio, pero se rompe si mueres (de
-        ahí su nombre).
-    </p>
-    <p>
-        Maestro de las Sendas: Permite lanzar hechizos más rápido. Es crucial para las Builds de Magia que se
-        centran en el Alma.
-    </p>
+        <div class="search-container">
+            <input class="search-input" type="search" placeholder="Buscar amuletos, mejoras...">
+        </div>
 
+        <section class="article">
+            <h3 class="article__subtitle">Amuletos</h3>
+            <ul class="list">
+                <li class="list-item">
+                    <img src="../assets/corazon-fragil.webp" alt="Corazón Frágil" class="list-item__img">
+                    <div>
+                        <h4>Corazón Frágil</h4>
+                        <p>Aumenta las máscaras de vida del Caballero. Es muy útil al inicio de la partida.</p>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <img src="../assets/brujula.webp" alt="Brújula Caprichosa" class="list-item__img">
+                    <div>
+                        <h4>Brújula Caprichosa</h4>
+                        <p>Te ayuda a orientarte en el mapa de Hallownest. Mostrando tu posición actual.</p>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <img src="../assets/cuerpo-firme.webp" alt="Cuerpo Firme" class="list-item__img">
+                    <div>
+                        <h4>Cuerpo Firme</h4>
+                        <p>Aumenta la reserva de Alma para lanzar más hechizos; se encuentra en muchas áreas.</p>
+                    </div>
+                </li>
+            </ul>
 
-    <h3>Mejoras del Aguijón</h3>
-    <img src="../assets/aguijon-onirico.png" alt="">
-    <p>
-        El Aguijón Puro es la forma definitiva de tu arma. Su daño es devastador. Se obtiene mediante la reunión de
-        mineral pálido y el herrero.
-    </p>
-    <p>
-        Recuerda que también tienes habilidades como el Espíritu Vengativo y el Espectro Sombrío, cruciales en
-        el combate.
-    </p>
+            <h3 class="article__subtitle">Mejoras</h3>
+            <ul class="list" id="mejoras-list">
+                <li class="list-item" data-name="aguijon puro">
+                    <img src="../assets/aguijon.png" alt="Aguijón" class="list-item__img">
+                    <div>
+                        <h4>Aguijón</h4>
+                        <p>El arma principal del Caballero; se puede mejorar para aumentar su daño y alcance.
+                        </p>
+                    </div>
+                </li>
+                <li class="list-item" data-name="aguijon onirico">
+                    <img src="../assets/aguijon-onirico.png" alt="Aguijón Onírico" class="list-item__img">
+                    <div>
+                        <h4>Aguijón Onírico</h4>
+                        <p>Versión del arma con propiedades especiales relacionadas con sueños y hechizos.</p>
+                    </div>
+                </li>
+                <li class="list-item" data-name="espiritu vengativo">
+                    <img src="../assets/espiritu-vengativo.webp" alt="Espíritu Vengativo" class="list-item__img">
+                    <div>
+                        <h4>Espíritu Vengativo</h4>
+                        <p>Habilidad que invoca una proyectil controlable; combina bien con mejoras de aguijón.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
 
     </main>
 
     <footer>
-        <img src="./assets/logo.webp" alt="logo" class="img-footer">
+        <img src="../assets/logo.webp" alt="logo" class="img-footer">
         <div class="legal-links">
             <a href="#">Terminos de Servicio</a>
             <a href="#">Politica de Privacidad</a>
             <a href="#">Seguridad</a>
         </div>
         <div class="social-links">
-            <a href="#"><img src="./assets/facebook-logo.png" alt="facebook logo" class="img-social"></a>
-            <a href="#"><img src="./assets/instagram-logo.png" alt="instagram logo" class="img-social"></a>
-            <a href="#"><img src="./assets/github-logo.png" alt="github logo" class="img-social"></a>
+            <a href="#"><img src="../assets/facebook-logo.png" alt="facebook logo" class="img-social"></a>
+            <a href="#"><img src="../assets/instagram-logo.png" alt="instagram logo" class="img-social"></a>
+            <a href="#"><img src="../assets/github-logo.png" alt="github logo" class="img-social"></a>
         </div>
         <p>Sitio fan de Hollow Knight | &copy; Copyright 2025</p>
     </footer>
