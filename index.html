@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
 
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +11,20 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hollow Knight - El Reino de Hallownest</title>
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header data-aos="fade-down">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/logo.webp" alt="hollow logo" class="img-nav">
+                    <img src="./assets/logo.webp" alt="hollow logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +55,13 @@
 
     <main>
 
-        <div class="title-container">
+        <div class="titleContainer" data-aos="zoom-in">
             <h1>Hollow Knight: El Reino Caído</h1>
-            <img src="./assets/hallownest.jpg" alt="hallownest" class="hallownest-img">
+            <img src="./assets/hallownest.jpg" alt="hallownest">
         </div>
 
-        <article class="article">
-            <h2 class="article__subtitle">Explora Hallownest</h2>
+        <article data-aos="fade-up">
+            <h2>Explora Hallownest</h2>
 
             <p>
                 Adéntrate en el vasto reino de Hallownest, una civilización en ruinas oculta bajo tierra. Eres el
@@ -75,9 +81,9 @@
 
             <img class="divider" src="./assets/divider.webp" alt="divisor">
 
-            <h2 class="article__subtitle">Tu Aventura Comienza Aquí</h2>
+            <h2>Tu Aventura Comienza Aquí</h2>
 
-            <div class="article__container--buttons">
+            <div class="buttonContainer">
                 <a href="./pages/personajes.html" class="btn btn-secondary">Conoce a los personajes y
                     aliados.</a>
                 <a href="./pages/mapa.html" class="btn btn-secondary">Viaja por las áreas principales del
@@ -87,8 +93,8 @@
 
         <img class="divider" src="./assets/divider.webp" alt="divisor">
 
-        <section class="section">
-            <h2 class="section__subtitle">Últimas Novedades</h2>
+        <section class="cardContainer" data-aos="fade-up">
+            <h2>Últimas Novedades</h2>
 
             <div class="card">
                 <img src="./assets/amuletos.png" class="card-img-top" alt="amuletos">
@@ -117,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+        <section class="cardContainer" data-aos="fade-up">
             <h2 class="section__subtitle">Personajes Destacados</h2>
 
             <div class="card">
@@ -150,7 +156,7 @@
 
     </main>
 
-    <footer>
+    <footer data-aos="fade-in">
         <img src="./assets/logo.webp" alt="logo" class="img-footer">
         <div class="legal-links">
             <a href="#">Terminos de Servicio</a>
@@ -168,6 +174,10 @@
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

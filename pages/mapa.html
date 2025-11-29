@@ -10,12 +10,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hollow Knight - Mapa</title>
 </head>
 
 <body>
 
-    <header>
+    <header data-aos="fade-down">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
@@ -48,56 +49,112 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container my-5">
 
-        <section class="section">
-            <h2 class="section__subtitle">Geografía del Reino Caído</h2>
+        <h1 class="text-center mb-5" data-aos="zoom-in">Geografía del Reino Caído</h1>
 
-            <div class="card">
-                <img src="../assets/city-of-tears-map.webp" class="card-img-top" alt="Ciudad de Lágrimas">
-                <div class="card-body">
-                    <h5 class="card-title">Ciudad de Lágrimas</h5>
-                    <p class="card-text">Antiguo corazón de Hallownest: una ciudad monumental siempre bañada por
-                        lluvia. Sus canales y edificios góticos conservan ecos de la antigua civilización y las
-                        soñadoras.</p>
-                </div>
+        <section class="map-section" data-aos="fade-right">
+            <img src="../assets/city-of-tears-map.webp" alt="Ciudad de Lágrimas">
+            <div class="map-content">
+                <h3>Ciudad de Lágrimas</h3>
+                <p>Antiguo corazón de Hallownest: una ciudad monumental siempre bañada por lluvia. Sus canales y
+                    edificios góticos conservan ecos de la antigua civilización y las soñadoras. Es el hogar del
+                    Santuario de las Almas y la Torre del Vigía.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="../assets/greenpath-map.webp" class="card-img-top" alt="Greenpath / Mapa">
-                <div class="card-body">
-                    <h5 class="card-title">Greenpath</h5>
-                    <p class="card-text">Un paraje frondoso cercano a la entrada de Hallownest. Aquí la flora se
-                        entrelaza con rutas escondidas y enemigos más ligeros; es ideal para aprender el movimiento
-                        y encontrar amuletos iniciales.</p>
-                </div>
+        <section class="map-section" data-aos="fade-left">
+            <img src="../assets/greenpath-map.webp" alt="Greenpath">
+            <div class="map-content">
+                <h3>Greenpath</h3>
+                <p>Un paraje frondoso cercano a la entrada de Hallownest. Aquí la flora se entrelaza con rutas
+                    escondidas y enemigos más ligeros. Es un lugar vibrante lleno de vegetación ácida y musgo, donde
+                    Hornet pone a prueba a los viajeros.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="../assets/deepnest.webp" class="card-img-top" alt="Nidos Profundos">
-                <div class="card-body">
-                    <h5 class="card-title">Nidos Profundos</h5>
-                    <p class="card-text">Zona oscura y claustrofóbica habitada por criaturas araña y trampas. Es una
-                        de las áreas más peligrosas del reino y es famosa por sus pasadizos laberínticos y batallas
-                        tensas.</p>
-                </div>
+        <section class="map-section" data-aos="fade-right">
+            <img src="../assets/forgotten-crossroads-map.webp" alt="Forgotten Crossroads">
+            <div class="map-content">
+                <h3>Cruces Olvidados</h3>
+                <p>Las encrucijadas olvidadas: vastos túneles y enemigos básicos que sirven como eje para acceder a
+                    muchas otras regiones. Antaño bulliciosas rutas comerciales, ahora son el primer desafío para
+                    quienes descienden de Bocasucia.</p>
             </div>
+        </section>
 
-            <div class="card">
-                <img src="../assets/forgotten-crossroads-map.webp" class="card-img-top"
-                    alt="Ruinas / Forgotten Crossroads">
-                <div class="card-body">
-                    <h5 class="card-title">Forgotten Crossroads</h5>
-                    <p class="card-text">Las encrucijadas olvidadas: vastos túneles y enemigos básicos que sirven como
-                        eje para acceder a muchas otras regiones. Aquí se encuentran bancos y secretos esenciales.</p>
-                </div>
+        <section class="map-section" data-aos="fade-left">
+            <img src="../assets/deepnest.webp" alt="Nidos Profundos">
+            <div class="map-content">
+                <h3>Nido Profundo</h3>
+                <p>Zona oscura y claustrofóbica habitada por criaturas araña y trampas mortales. Es una de las áreas más
+                    peligrosas del reino, famosa por sus pasadizos laberínticos, oscuridad opresiva y la tribu de las
+                    tejedoras.</p>
             </div>
+        </section>
 
+        <section class="map-section" data-aos="fade-right">
+            <img src="../assets/crystal-peak.webp" alt="Cumbre de Cristal">
+            <div class="map-content">
+                <h3>Cumbre de Cristal</h3>
+                <p>Una montaña minera resplandeciente llena de cristales rosados que cantan. La maquinaria industrial
+                    aún funciona, y los mineros, enloquecidos por la infección, continúan su trabajo eterno entre cintas
+                    transportadoras y láseres.</p>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="fade-left">
+            <img src="../assets/resting-grounds.webp" alt="Tierras de Reposo">
+            <div class="map-content">
+                <h3>Tierras de Reposo</h3>
+                <p>Un lugar sagrado de entierro para los insectos de Hallownest. Aquí reside la Vidente, última de su
+                    tribu, y se ocultan los secretos de la Esencia y el Mundo de los Sueños. La atmósfera es solemne y
+                    silenciosa.</p>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="fade-right">
+            <img src="../assets/acient-basin.png" alt="Cuenca Antigua">
+            <div class="map-content">
+                <h3>Cuenca Antigua</h3>
+                <p>En lo más profundo del mundo, donde la luz apenas llega y el vacío comienza a filtrarse. Es un lugar
+                    desolado y gris, hogar del Palacio Blanco oculto y de criaturas corrompidas por la oscuridad
+                    primordial.</p>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="fade-left">
+            <img src="../assets/kingdoms-edge.webp" alt="Límites del Reino">
+            <div class="map-content">
+                <h3>Límites del Reino</h3>
+                <p>Una región exterior azotada por la ceniza que cae del cadáver de un gran Wyrm. Es un terreno vertical
+                    y peligroso, lleno de guerreros primitivos y el coliseo de los insensatos, donde se busca la gloria
+                    en combate.</p>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="fade-right">
+            <img src="../assets/fungal-wastes.webp" alt="Páramos Fúngicos">
+            <div class="map-content">
+                <h3>Páramos Fúngicos</h3>
+                <p>Cavernas húmedas repletas de hongos gigantes y esporas explosivas. Es el territorio de la tribu
+                    Mantis, guerreros orgullosos que rechazaron la infección y protegen su aldea en el corazón de este
+                    laberinto fúngico.</p>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="fade-left">
+            <img src="../assets/queens-gardens.webp" alt="Jardines de la Reina">
+            <div class="map-content">
+                <h3>Jardines de la Reina</h3>
+                <p>Lo que una vez fue un refugio real, ahora es una jungla de espinas y plataformas traicioneras. A
+                    pesar del peligro, conserva una belleza melancólica y esconde el retiro final de la Dama Blanca.</p>
+            </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer data-aos="fade-in">
         <img src="../assets/logo.webp" alt="logo" class="img-footer">
         <div class="legal-links">
             <a href="#">Terminos de Servicio</a>
@@ -115,6 +172,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

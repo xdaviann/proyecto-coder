@@ -1,0 +1,14 @@
+@use "../utilities/variables";
+
+.titleContainer {
+  width: 100%;
+  text-align: center;
+  img {
+    width: 100%;
+    margin: 2rem auto;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 80%;
+    }
+  }
+}

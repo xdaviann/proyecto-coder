@@ -1,0 +1,70 @@
+@use "../utilities/variables";
+
+.lore-section {
+  background-color: rgb(20, 20, 30, 0.3);
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  .lore-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media (min-width: variables.$desktop-width) {
+      flex-direction: row;
+      align-items: center;
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+
+    img {
+      padding: 2rem;
+      max-width: 400px;
+      border-radius: 4px;
+      border: 1px solid #777;
+      box-shadow: 0 0 10px rgb(255, 255, 255, 0.1);
+    }
+
+    .text-container {
+      flex: 1;
+
+      h3 {
+        font-size: 1.8rem;
+        color: #e0e0e0;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #444;
+        padding-bottom: 0.5rem;
+        display: inline-block;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+
+      .btn-lore {
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        background-color: transparent;
+        border: 1px solid #aaa;
+        color: #aaa;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+
+        &:hover {
+          background-color: #aaa;
+          color: #000;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+}

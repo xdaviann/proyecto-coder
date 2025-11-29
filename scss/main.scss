@@ -1,0 +1,16 @@
+// BASE
+@use "./partials/base/_reset.scss";
+@use "./partials/base/_tipografia.scss";
+
+// COMPONENTS
+@use "./partials/components/_header.scss";
+@use "./partials/components/_searchBar.scss";
+@use "./partials/components/_listContainer.scss";
+@use "./partials/components/_titleContainer.scss";
+@use "./partials/components/_articleContainer.scss";
+@use "./partials/components/_buttonsContainer.scss";
+@use "./partials/components/_cardContainer.scss";
+@use "./partials/components/_divider.scss";
+@use "./partials/components/_mapSection.scss";
+@use "./partials/components/_loreSection.scss";
+@use "./partials/components/_footer.scss";

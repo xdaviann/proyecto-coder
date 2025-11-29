@@ -1,6 +1,0 @@
--Generar el layout con flex+grid o bootstrap
--Maquetado avanzado en los 5 html
--index + una pagina mas (2 en total) responsivas
--Estilar todo lo que se traiga desde bootstrap
--Etiquetas semanticas
--Se entrega mediante el repositorio de github

@@ -1,0 +1,52 @@
+@use "../utilities/variables";
+
+.map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: rgb(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 1px solid #444;
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .map-content {
+    flex: 1;
+    padding: 1rem;
+    color: #ddd;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 0 0 10px rgb(255, 255, 255, 0.3);
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+}
